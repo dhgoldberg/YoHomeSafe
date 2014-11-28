@@ -1,0 +1,13 @@
+body {
+    background: #2980B9 !important;
+    color: #FFFFFF !important;
+    font-family: Montserrat;
+    font-weight: 400;
+    text-align: center;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: #FFFFFF !important;
+    font-weight: 700;
+    text-decoration: none;
+}

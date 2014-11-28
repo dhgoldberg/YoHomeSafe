@@ -1,0 +1,4 @@
+cron:
+  - description: find active users and yo or contact friend.
+    url: /cron_task
+    schedule: every 3 minutes

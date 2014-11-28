@@ -1,0 +1,20 @@
+application: yohomesafe
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: css
+- url: /.*
+  script: yoSafety.application
+- url: /cron_task
+  script: yoSafety.application
+  login: admin
+
+libraries:
+- name: webapp2
+  version: latest
+- name: jinja2
+  version: latest

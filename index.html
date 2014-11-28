@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Montserrat:700,400">
+  <meta name="viewport" content="width=400, initial-scale=1.0">
+</head>
+
+<body>
+
+<h1>Sign Up, Yo</h1>
+
+  <form action="/signup" method="post">
+    <h3>Enter your Yo username:</h3>
+    <input type="text" name="{{handle_input_key}}" value="{{ username }}" />
+    <h3>Enter a friend's email?  Yo?  shit.</h3>
+    <input type="text" name="{{friend_contact_key}}" value="" />
+    <br />
+    <input type="submit" class="button" value="Submit">
+  </form>
+
+  <p> Put instruction here...</p>
+
+</body>
+
+</html>
+{% endautoescape %}
